@@ -1,6 +1,6 @@
-const React = require('react');
+var React = require('react');
 
-const CurrentLocation = React.createClass({
+var CurrentLocation = React.createClass({
 
 	toggleFavorite(){
 		this.props.onFavoriteToggle(this.props.address);
@@ -8,10 +8,10 @@ const CurrentLocation = React.createClass({
 
 	render(){
 
-		const starClassName = "glyphicon glyphicon-pawn";
+		var starClassName = "glyphicon glyphicon-globe";
 
 		if(this.props.favorite){
-			starClassName = "glyphicon glyphicon-queen";
+			starClassName = "glyphicon glyphicon-circle-arrow-down";
 		}
 
 		return (

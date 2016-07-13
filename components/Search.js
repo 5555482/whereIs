@@ -1,6 +1,6 @@
-const React = require('react');
+var React = require('react');
 
-const Search = React.createClass({
+var Search = React.createClass({
 
 	getInitialState() {
 		return { value: '' };

@@ -1,18 +1,21 @@
-const React = require('react');
-const LocationItem = require('./LocationItem');
-const moment = require('moment');
+var React = require('react');
+var LocationItem = require('./LocationItem');
+var moment = require('moment');
 
-const LocationItem = React.createClass({
+var LocationItem = React.createClass({
 
 	handleClick(){
 		this.props.onClick(this.props.address);
 	},
 
 	render(){
-		const cn = "list-group-item";
+
+		var cn = "list-group-item";
+
 		if(this.props.active){
 			cn += " active-location";
 		}
+
 		return (
 			<a className={cn} onClick={this.handleClick}>
 				{this.props.address}
@@ -20,7 +23,9 @@ const LocationItem = React.createClass({
 				<span className="glyphicon glyphicon-menu-right"></span>
 			</a>
 		)
+
 	}
+
 });
 
 module.exports = LocationItem;

@@ -5,7 +5,8 @@
 }
 
 h1 {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	font-size: 30px;
 }
 
 #geocoding_form {
@@ -41,8 +42,8 @@ h1 {
 	line-height: 1.4;
 }
 
-.current-location .glyphicon-star, 
-.current-location .glyphicon-star-empty {
+.current-location .glyphicon-globe, 
+.current-location .glyphicon-circle-arrow-down {
 	display: inline-block;
 	margin-left: 10px;
 	font-size: 22px;
@@ -73,7 +74,7 @@ h1 {
 	top: 50%;
 	margin: -11px auto 0 -42px;
 	font-size: 20px;
-	color: #969FA8;
+	color: #EEF6FF;
 }
 
 #map {
@@ -97,7 +98,7 @@ a.list-group-item {
 }
 
 a.list-group-item:hover {
-	background-color: #F7FBFF;
+	background-color: #EEF6FF;
 }
 
 a.active-location {
@@ -105,11 +106,11 @@ a.active-location {
 }
 
 a.active-location:hover {
-	background-color: #EBF3FC;
+	background-color: #EEF6FF;
 }
 
 a.list-group-item span.createdAt {
 	display: block;
-	color: #969FA8;
+	color: #EEF6FF;
 	z-index: -1;
 }
